@@ -9,32 +9,32 @@ const projects = [
     eyebrow: 'Founder & Developer',
     url: 'https://throwlogic.zacharyrollins.net',
     description:
-      'I built ThrowLogic as a full-stack coaching platform that analyzes discus throw technique with computer vision, pose tracking, machine learning, and structured AI feedback.',
+      'I built ThrowLogic, a coaching platform that analyzes discus throw technique with computer vision, pose tracking, machine learning, and structured AI feedback.',
     stack: ['React', 'FastAPI', 'Python', 'OpenCV', 'MediaPipe', 'ML'],
     points: ['Video upload and phase review workflow', 'Pose feature extraction pipeline', 'Feedback designed around what athletes and coaches can actually use'],
   },
   {
-    title: 'CloudStruct LLC',
-    eyebrow: 'Co-Founder',
+    title: 'CloudStruct Websites',
+    eyebrow: 'Builder & Partner',
     url: 'https://cloudstructwebsites.com',
     description:
-      'I co-founded CloudStruct LLC to build practical websites, custom features, hosting setups, and client-ready software for small businesses.',
-    stack: ['HTML', 'CSS', 'PHP', 'Bootstrap', 'Hosting', 'Client Work'],
-    points: ['Custom websites designed and shipped for real clients', 'Frontend, backend, hosting, and deployment work', 'Business needs translated into working software'],
+      'We created CloudStruct Websites to build professional websites, custom features, and easy-to-use software for small businesses around Maine.',
+    stack: ['HTML', 'CSS', 'PHP', 'Bootstrap', 'Ubuntu'],
+    points: ['Custom websites designed and hosted for all types of clients', 'Frontend, backend, hosting, and deployment work', 'Business wants and needs translated into production-level software'],
     clientLinks: [
-      { label: 'Boothbay Baptist', url: 'https://boothbaybaptist.com' },
+      { label: 'Boothbay Baptist Church', url: 'https://boothbaybaptist.com' },
       { label: 'Safe Harbor Church', url: 'https://safeharborme.com' },
-      { label: 'Post 36 Maine', url: 'https://post36maine.org' },
+      { label: 'Post 36 Maine American Legion', url: 'https://post36maine.org' },
     ],
   },
   {
-    title: 'Ames Rollins Technologies',
-    eyebrow: 'Builder & Partner',
+    title: 'Ames Rollins Technologies LLC',
+    eyebrow: 'Co-Founder & Developer',
     url: 'https://amesrollinstechnologies.com',
     description:
-      'I help build Ames Rollins Technologies around reliable software, websites, automation, and technical support for local organizations and growing ideas.',
-    stack: ['Web Apps', 'Automation', 'IT Support', 'Systems', 'Consulting'],
-    points: ['Practical problem solving before unnecessary complexity', 'Development paired with hands-on technical service', 'Long-term trust, reliability, and usefulness'],
+      'I co-founded Ames Rollins Technologies LLC with the values of making easy-to-use, affordable software that improves the lives of everyday people around the world. Through this company, we develop apps, websites, and games for anyone to use and play with.',
+    stack: ['Mobile Apps', 'Web Development', 'Gaming Platforms'],
+    points: ['Easy-to-use software built for everyday people', 'Affordable apps, websites, and games designed for broad access', 'Products focused on usefulness, play, and improving daily life'],
   },
 ];
 
@@ -52,14 +52,14 @@ const research = {
 
 const strengths = [
   { icon: Code2, title: 'Software-first problem solving', text: 'Turning rough ideas into dependable tools, then refining the details until the product is useful.' },
-  { icon: Wrench, title: 'Hands-on technical background', text: 'Years of IT repair, troubleshooting, and side work gave me a practical instinct for debugging real systems.' },
-  { icon: Trophy, title: 'Athletic work ethic', text: 'Competing and coaching taught me consistency, feedback loops, and the value of showing up when progress is slow.' },
-  { icon: Users, title: 'Leadership under pressure', text: 'Student government, e-sports leadership, and coaching roles shaped how I communicate, organize, and follow through.' },
+  { icon: Wrench, title: 'Hands-on technical background', text: 'Years of IT repair and troubleshooting gave me a skills and a strong instinct for debugging computer systems.' },
+  { icon: Trophy, title: 'Athletic work ethic', text: 'Competing and coaching taught me about consistency, feedback loops, and the value of showing up even when progress is slow.' },
+  { icon: Users, title: 'Leadership under pressure', text: 'Student government, coaching e-sports, and athletics shaped how I communicate, organize, and follow through.' },
 ];
 
 const timeline = [
-  { year: '2026', title: 'Georgia Tech OMSCS', detail: 'I am starting the Online Master of Science in Computer Science in Fall 2026.' },
-  { year: '2026', title: 'B.S. Computer Information Systems', detail: 'I graduated Summa Cum Laude from the University of Maine at Augusta.' },
+  { year: '2026', title: 'Georgia Tech OMSCS', detail: "Starting an Online Master's of Science in Computer Science in Fall 2026." },
+  { year: '2026', title: 'B.S. Computer Information Systems', detail: 'Graduated Summa Cum Laude from the University of Maine at Augusta.' },
   { year: '2025+', title: 'Technical Services Intern', detail: 'Resolving software, systems, and support issues while building stronger debugging habits.' },
   { year: '2018+', title: 'Side hustles and local tech work', detail: 'Started young with device repair, troubleshooting, websites, and practical technical help.' },
 ];
@@ -85,7 +85,7 @@ function App() {
     if (typeof window === 'undefined') return false;
     const savedTheme = window.localStorage.getItem('theme');
     if (savedTheme) return savedTheme === 'dark';
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return false;
   });
 
   React.useEffect(() => {
@@ -125,7 +125,7 @@ function App() {
           <p className="kicker">Software engineering portfolio</p>
           <h1>Hard-working, optimistic software engineering and development.</h1>
           <p className="hero-text">
-            I'm Zachary Rollins, a software developer who brings a builder's mindset to full-stack applications, technical support, data-driven systems, and AI-assisted tools. I care about doing the work, learning quickly, and building software that helps people move forward.
+            I'm Zachary Rollins, a software developer who brings a builder's mindset to full-stack applications, technical support, data-driven systems, and AI-assisted tools. I care about hard work, learning quickly, and building software that helps people and society move forward.
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#work">See my work <ArrowUpRight size={18} /></a>
@@ -147,7 +147,7 @@ function App() {
 
       <section className="section band" aria-label="Technical skills">
         <div className="skill-row">
-          {['Python', 'Java', 'C++', 'C#', 'SQL', 'React', 'FastAPI', 'Docker', 'Linux', 'OpenCV'].map((skill) => (
+          {['Python', 'Java', 'C++', 'C#', 'SQL', 'Linux', 'Git', 'React', 'FastAPI', 'Docker', 'Linux', 'OpenCV'].map((skill) => (
             <span key={skill}>{skill}</span>
           ))}
         </div>
@@ -194,15 +194,16 @@ function App() {
         <div className="story-images reveal">
           <img className="wide-img" src="/assets/zachary-rollins-award.jpg" alt="Zachary Rollins receiving an athletics award" />
           <img className="small-img" src="/assets/zachary-rollins-hands-on.jpg" alt="Zachary Rollins working on a generator control panel" />
+          <img className="repair-img" src="/assets/zachary-rollins-phone-repair.jpg" alt="A repaired Samsung phone beside its broken screen and replacement display" />
         </div>
         <div className="story-copy reveal delay-1">
-          <p className="kicker">Personal operating system</p>
-          <h2>Work hard, stay useful, keep improving.</h2>
+          <p className="kicker">Life leading up to software</p>
+          <h2>Work hard, stay grounded, keep improving.</h2>
           <p>
-            My path into software has always been practical. I started taking on side work early, fixing devices, troubleshooting systems, building websites, and learning how to solve problems for people who needed something to work.
+            My path into software has always been practical. I started taking on side work early, fixing devices, troubleshooting systems, and learning how to solve problems for people who need their tech to work.
           </p>
           <p>
-            Athletics and leadership shaped the same mindset: show up consistently, listen to feedback, communicate clearly, and keep moving. That is the attitude I bring to engineering teams and software projects.
+            Athletics and leadership shaped my mindset: show up consistently, listen to feedback, communicate clearly, and keep moving. That is the attitude I bring to any team or project I work on.
           </p>
           <div className="strength-grid">
             {strengths.map(({ icon: Icon, title, text }) => (
@@ -237,7 +238,7 @@ function App() {
       <section className="section timeline-section">
         <div className="section-heading reveal">
           <p className="kicker">Education & experience</p>
-          <h2>A foundation built through school, internships, leadership, and consistent side work.</h2>
+          <h2>A foundation built through school, internships, leadership, and many side hustles.</h2>
         </div>
         <div className="timeline">
           {timeline.map((item) => (
@@ -257,7 +258,7 @@ function App() {
           <GraduationCap size={28} />
           <h2>Looking for software engineering opportunities.</h2>
           <p>
-            I'm interested in roles where I can contribute to full-stack products, backend systems, applied AI tools, data-driven applications, and teams that value steady execution.
+            I'm interested in roles where I can contribute to full-stack products, backend systems, applied AI tools, and data-driven applications.
           </p>
           <div className="contact-actions">
             <a className="button primary" href="mailto:zachrollins2@gmail.com"><Mail size={18} /> Email me</a>
