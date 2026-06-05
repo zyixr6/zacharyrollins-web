@@ -123,7 +123,7 @@ function App() {
       <section className="hero section" id="top">
         <div className="hero-copy reveal">
           <p className="kicker">Software engineering portfolio</p>
-          <h1>Hard-working, optimistic software engineering and development.</h1>
+          <h1>Hard-working, optimistic software engineer and developer.</h1>
           <p className="hero-text">
             I'm Zachary Rollins, a software developer who brings a builder's mindset to full-stack applications, technical support, data-driven systems, and AI-assisted tools. I care about hard work, learning quickly, and building software that helps people and society move forward.
           </p>
