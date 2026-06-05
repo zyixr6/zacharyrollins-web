@@ -52,13 +52,13 @@ const research = {
 
 const strengths = [
   { icon: Code2, title: 'Software-first problem solving', text: 'Turning rough ideas into dependable tools, then refining the details until the product is useful.' },
-  { icon: Wrench, title: 'Hands-on technical background', text: 'Years of IT repair and troubleshooting gave me a skills and a strong instinct for debugging computer systems.' },
+  { icon: Wrench, title: 'Hands-on technical background', text: 'Years of IT repair and troubleshooting gave me skills and a strong instinct for debugging computer systems.' },
   { icon: Trophy, title: 'Athletic work ethic', text: 'Competing and coaching taught me about consistency, feedback loops, and the value of showing up even when progress is slow.' },
   { icon: Users, title: 'Leadership under pressure', text: 'Student government, coaching e-sports, and athletics shaped how I communicate, organize, and follow through.' },
 ];
 
 const timeline = [
-  { year: '2026', title: 'Georgia Tech OMSCS', detail: "Starting an Online Master's of Science in Computer Science in Fall 2026." },
+  { year: '2026', title: 'Georgia Tech OMSCS', detail: 'Starting the OMSCS program in Fall 2026.' },
   { year: '2026', title: 'B.S. Computer Information Systems', detail: 'Graduated Summa Cum Laude from the University of Maine at Augusta.' },
   { year: '2025+', title: 'Technical Services Intern', detail: 'Resolving software, systems, and support issues while building stronger debugging habits.' },
   { year: '2018+', title: 'Side hustles and local tech work', detail: 'Started young with device repair, troubleshooting, websites, and practical technical help.' },
@@ -147,7 +147,7 @@ function App() {
 
       <section className="section band" aria-label="Technical skills">
         <div className="skill-row">
-          {['Python', 'Java', 'C++', 'C#', 'SQL', 'Linux', 'Git', 'React', 'FastAPI', 'Docker', 'Linux', 'OpenCV'].map((skill) => (
+          {['Python', 'Java', 'C++', 'C#', 'SQL', 'Linux', 'Git', 'React', 'FastAPI', 'Docker', 'OpenCV'].map((skill) => (
             <span key={skill}>{skill}</span>
           ))}
         </div>
