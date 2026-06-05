@@ -24,5 +24,3 @@ The site links the resume button to:
 ```text
 public/Zachary_Rollins_Resume.pdf
 ```
-
-Place your final PDF resume at that exact path and rebuild/deploy. The filename is case-sensitive on many hosting platforms.
