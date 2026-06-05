@@ -139,9 +139,13 @@ function App() {
         </div>
         <div className="hero-media reveal delay-1">
           <div className="portrait-card">
-            <img src="/assets/zachary-rollins-headshot.jpg" alt="Professional headshot of Zachary Rollins" />
+            <img className="portrait-image portrait-image-light" src="/assets/zachary-rollins-headshot.jpg" alt="Professional headshot of Zachary Rollins" />
+            <img className="portrait-image portrait-image-dark" src="/assets/zachary-rollins-graduation.jpg" alt="Zachary Rollins wearing graduation regalia" />
           </div>
-          <div className="floating-note">Full-stack builder. Coach. Problem solver.</div>
+          <div className="floating-note">
+            <span>Full-stack builder. Coach. Problem solver.</span>
+            <small>P.S. don't like this photo? try {isDarkMode ? 'light' : 'night'} mode!</small>
+          </div>
         </div>
       </section>
 
